@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>BLUR and FOCUS</title>
+    <style type="text/css" media="all">
+      body {
+        margin: 0px;
+        padding: 0px;
+        background: #ffffff;
+        
+      }
+      h1{
+        display:flex;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+        font-family:Monospace;
+        min-height: 100vh;
+        color: black;
+        gap: 10%;
+        
+        
+      }
+      span{
+        font-size:50px;
+        filter:blur(10px);
+      }
+      h1 span:hover{
+        filter:blur(0px);
+        transition: 0.5s;
+      }
+      #moon { 
+        margin: 10px;
+        margin-bottom: 0px;
+   width: 40px;
+   height: 40px;
+   background: black; 
+   border-radius: 50%;
+   filter:blur(10px);
+}
+:root{
+  	-webkit-animation: color-change-5x 30s
+  	linear infinite alternate both;
+	  animation: color-change-5x 30s
+	  linear infinite alternate both;
+	
+}
+@-webkit-keyframes color-change-5x {
+  0% {
+    filter: invert(100%)
+  }
+}
+
+#moon:hover {
+  filter:blur(0px);
+  transition: 0.5s;
+  
+}
+    </style>
+  </head>
+  <body>
+   <div id=moon on onclick="">
+     
+   </div>
+    <h1 name="h1">
+      <span class="span">F</span>
+      <span class="span">0</span>
+      <span class="span">C</span>
+      <span class="span">U</span>
+      <span class="span">S</span>
+      
+    </h1>
+   
+  </body>
+</html>
